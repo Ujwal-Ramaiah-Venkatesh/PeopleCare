@@ -7,19 +7,20 @@ interface SplashLoaderProps {
 
 export function SplashLoader({ onComplete }: SplashLoaderProps) {
   const [visible, setVisible] = useState(true);
+  const [isMobile] = useState(() =>
+    typeof window !== 'undefined' ? window.innerWidth < 768 : false
+  );
 
   useEffect(() => {
-    const prefersReduced =
-      typeof window !== 'undefined' &&
-      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-    const duration = prefersReduced ? 600 : 2200;
+    const duration = isMobile ? 3000 : 2200;
     const timer = window.setTimeout(() => {
       setVisible(false);
     }, duration);
 
     return () => window.clearTimeout(timer);
-  }, []);
+  }, [isMobile]);
+
+  const barDuration = isMobile ? 2.65 : 1.85;
 
   return (
     <AnimatePresence onExitComplete={onComplete}>
@@ -61,7 +62,7 @@ export function SplashLoader({ onComplete }: SplashLoaderProps) {
               <motion.div
                 initial={{ x: '-100%' }}
                 animate={{ x: '0%' }}
-                transition={{ duration: 1.85, ease: [0.22, 1, 0.36, 1] }}
+                transition={{ duration: barDuration, ease: [0.22, 1, 0.36, 1] }}
                 className="h-full w-full bg-gradient-to-r from-gold/60 via-white to-gold/60"
               />
             </div>
