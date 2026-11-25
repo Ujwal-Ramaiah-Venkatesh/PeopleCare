@@ -46,13 +46,13 @@ export function Navbar({ onBookClick }: NavbarProps) {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 md:h-20 flex items-center justify-between gap-4">
         {/* Left: Emblem + Brand */}
-        <a href="#top" className="flex items-center gap-3 group">
+        <a href="#top" className="flex items-center gap-2.5 sm:gap-3 group min-w-0">
           <BrandEmblem className="w-9 h-9 md:w-10 md:h-10 transition-transform duration-300 group-hover:scale-105" />
-          <div className="leading-tight">
-            <span className="font-serif text-lg md:text-xl font-semibold tracking-wide text-cream block">
+          <div className="leading-tight min-w-0">
+            <span className="font-serif text-base sm:text-lg md:text-xl font-semibold tracking-wide text-cream block truncate">
               {siteConfig.brandName}
             </span>
-            <span className="hidden sm:block text-[10px] uppercase tracking-[0.2em] text-cream/75">
+            <span className="block text-[9px] sm:text-[10px] uppercase tracking-[0.11em] sm:tracking-[0.2em] text-cream/80 mt-0.5 truncate">
               Davanagere • Celebrations &amp; Catering
             </span>
           </div>
