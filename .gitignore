@@ -1,0 +1,18 @@
+# Dependencies & build output
+node_modules/
+dist/
+dist-ssr/
+
+# Local environment & editor files
+.env
+.env.local
+.env.*.local
+*.local
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+
+# Reference reel video (47MB raw source) & uncurated staging folder
+0d217ccf7dd44e9aa2ded01de6065474.mp4
+Images&Vedios/
