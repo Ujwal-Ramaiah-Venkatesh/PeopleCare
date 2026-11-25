@@ -205,11 +205,11 @@ export const realMoments: MomentItem[] = [
   // ENGAGEMENT & WEDDING DETAILS
   {
     id: 'moment-14',
-    title: 'Circular Blush Rose Engagement Arch',
+    title: 'Traditional Engagement & Thamboolam',
     category: 'Weddings',
     mediaType: 'image',
-    caption: 'Blush sheer drapes, circular pink floral arch, hanging ivy vines, and vintage accent decor.',
-    image: '/images/real/Image33.webp',
+    caption: 'Carved couple seating, terracotta kolam backdrop, brass pillars, banana plants, and thamboolam platters.',
+    image: '/images/real/Image11.webp',
     eventLocation: 'Davanagere',
     spanClass: 'md:col-span-1 md:row-span-1',
   },

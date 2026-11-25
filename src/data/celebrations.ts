@@ -34,7 +34,7 @@ export const worldOfCelebrations: CelebrationCard[] = [
     id: 'traditional-celebrations',
     title: 'Traditional Celebrations',
     subtitle: 'Sacred naming ceremonies, cradle setups & cultural styling',
-    image: '/images/real/Image11.webp',
+    image: '/images/real/Image40.webp',
     occasions: ['Naming Ceremonies', 'Baby Showers', 'Cradle Decor', 'Festive Poojas'],
   },
   {
@@ -52,8 +52,8 @@ export const weddingDecorAccordion: WeddingAccordionItem[] = [
     title: 'Engagement',
     shortLabel: 'Engagement',
     description:
-      'Circular blush floral arches, sheer pastel drapes, and romantic botanical photo setups for your first milestone.',
-    image: '/images/real/Image33.webp',
+      'Carved couple seating, terracotta kolam backdrop, brass pillars, banana leaves, and arranged thamboolam platters.',
+    image: '/images/real/Image11.webp',
     accentColor: '#7A4E3B',
   },
   {
