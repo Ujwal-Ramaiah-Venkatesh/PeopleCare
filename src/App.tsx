@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { MotionConfig } from 'framer-motion';
+import { SplashLoader } from './components/SplashLoader';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { CelebrationsGrid } from './components/CelebrationsGrid';
@@ -24,6 +25,7 @@ export default function App() {
 
   return (
     <MotionConfig reducedMotion="user">
+      <SplashLoader />
       <div className="min-h-screen flex flex-col bg-cream text-espresso">
         <Navbar onBookClick={() => scrollToContact()} />
         <main className="flex-1">

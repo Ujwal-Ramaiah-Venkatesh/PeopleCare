@@ -19,7 +19,7 @@ export function Footer({ onBookClick }: FooterProps) {
           transition={{ duration: 0.7 }}
           className="flex flex-col items-center"
         >
-          <BrandEmblem className="w-14 h-14 mb-6" />
+          <BrandEmblem className="w-20 h-20 mb-6 shadow-xl" />
           <h2 className="font-serif text-4xl sm:text-5xl md:text-[3.6rem] font-normal leading-[1.08] text-cream max-w-xl">
             Your next chapter, <br />
             <span className="italic">thoughtfully celebrated.</span>

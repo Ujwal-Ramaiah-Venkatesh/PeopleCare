@@ -17,14 +17,13 @@ const navLinks = [
 export function BrandEmblem({ className = 'w-10 h-10' }: { className?: string }) {
   return (
     <div
-      className={`${className} rounded-full border border-cream/60 bg-cream/10 flex items-center justify-center shrink-0`}
-      aria-hidden="true"
+      className={`${className} rounded-full border border-gold/55 bg-black overflow-hidden flex items-center justify-center shrink-0 shadow-sm p-0.5`}
     >
-      <svg viewBox="0 0 40 40" className="w-6 h-6 text-cream" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M20 7C20 14 14 19 8 19C14 19 20 24 20 33C20 24 26 19 32 19C26 19 20 14 20 7Z" />
-        <circle cx="20" cy="19" r="2.2" fill="currentColor" />
-        <path d="M12 11C14.5 13.5 15.5 15 16 16.5M28 11C25.5 13.5 24.5 15 24 16.5M12 27C14.5 24.5 15.5 23 16 21.5M28 27C25.5 24.5 24.5 23 24 21.5" strokeLinecap="round" />
-      </svg>
+      <img
+        src="/images/people-care-logo.jpg"
+        alt="People Care Event Management"
+        className="w-full h-full object-contain rounded-full"
+      />
     </div>
   );
 }
